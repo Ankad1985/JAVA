@@ -1,0 +1,23 @@
+//*Замените символ “=” на слово “равно”. Используйте методы StringBuilder.replace().
+class Main {
+  public static void main(String[] args) {
+    String user_enter = "java = very difficult";
+    String str = "равно";
+
+    int index_element = user_enter.indexOf('=');
+    System.out.println("Символ '=' имеет индекс: " + index_element);
+    if(index_element == -1){
+      System.out.print("Строка не содержит символ '='");
+       return;
+   }
+    
+    StringBuilder str1 = new StringBuilder(user_enter);
+    System.out.println("Исходная строка: " + user_enter);
+    int end = index_element + 1;
+    StringBuilder afterReplace = str1.replace(index_element, end, str);
+    System.out.println("Строка после замены: " + afterReplace);
+  }
+}  
+
+//StringBuilder replace(int start, int end, String str)
+//Заменяет часть строки, заданную интервалом start..end на переданную строку
