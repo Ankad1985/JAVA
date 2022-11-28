@@ -1,0 +1,37 @@
+//Замените символ “=” на слово “равно”. Используйте методы StringBuilder.insert(),StringBuilder.deleteCharAt().
+import java.util.Scanner;  
+class Main{
+  
+  public static void changeSimbol(){
+    
+   //Ввод строки с клавиатуры
+   Scanner input = new Scanner(System.in);
+   System.out.print("Введите строку и нажмите enter: "); 
+   String str = input.nextLine();
+    
+   //Поиск индекса символа '=' 
+   int index_element = str.indexOf('=');
+   //System.out.println("Символ '=' имеет индекс: " + index_element);
+   if(index_element == -1){
+     System.out.print("Строка не содержит символ '='");
+     return;
+   } 
+   //Преобразование из String в StringBiulder 
+   StringBuilder str1 = new StringBuilder(str);
+   System.out.println("Исходная строка: " + str);
+    
+   //Удаление символа по индексу 
+   StringBuilder afterRemove = str1.deleteCharAt(index_element);
+   System.out.println("Строка после удаления символа '=': " + str1);
+    
+   //Замена символа по найденному индексу на слово 'равно' 
+   StringBuilder afterInsert = str1.insert(index_element, "равно");
+   System.out.println("Изменённая строка: " + str1);
+    
+  }
+  
+   public static void main(String[] args){
+   changeSimbol();
+   
+  }
+}    
