@@ -1,11 +1,15 @@
 //4.Дано два числа, например 3 и 56, необходимо составить следующие строки: 3 + 56 = 59 3 – 56 = -53 3 * 56 = 168 Используем метод StringBuilder.append().
 class Main {
+
+  public static String appendStr(String str1, String str2, String str3){
+    StringBuilder builder = new StringBuilder(str1+" ");
+    builder.append("+"+" "+str2+ " ");
+    builder.append("="+" "+str3);
+    String result = builder.toString();
+    return result;
+  }
   public static void main(String[] args) {
     
-    
-    StringBuilder result1 = new StringBuilder();
-    StringBuilder result2 = new StringBuilder();
-    StringBuilder result3 = new StringBuilder();
     int a = 3;
     int b = 56;
     int c = a + b;
@@ -16,11 +20,6 @@ class Main {
     String sum = Integer.toString(c);
     String sub = Integer.toString(d);
     String mult = Integer.toString(e);
-    result1.append(num1 +" "+"+"+" "+ num2+" "+" "+"="+" "+sum);
-    result2.append(num1 +" "+"-"+" "+ num2+" "+" "+"="+" "+sub);
-    result3.append(num1 +" "+"*"+" "+ num2+" "+" "+"="+" "+mult);
-    System.out.println(result1);
-    System.out.println(result2);
-    System.out.println(result3);
-  }
-}
+    System.out.println(appendStr(num1,num2,sum));
+    System.out.println(appendStr(num1,num2,sub));
+    System.out.println(appendStr(num1,num2,mult));
