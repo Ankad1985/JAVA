@@ -10,16 +10,20 @@ class Main {
   }
   public static void main(String[] args) {
     
-    int a = 3;
-    int b = 56;
-    int c = a + b;
-    int d = a - b;
-    int e = a * b;
-    String num1 = Integer.toString(a);
-    String num2 = Integer.toString(b);
-    String sum = Integer.toString(c);
-    String sub = Integer.toString(d);
-    String mult = Integer.toString(e);
+    int int_num1 = 3;
+    int int_num2 = 56;
+    int int_sum = int_num1 + int_num2;
+    int int_sub = int_num1 - int_num2;
+    int int_mult = int_num1 * int_num2;
+    String num1 = Integer.toString(int_num1);
+    String num2 = Integer.toString(int_num2);
+    String sum = Integer.toString(int_sum);
+    String sub = Integer.toString(int_sub);
+    String mult = Integer.toString(int_mult);
+    
     System.out.println(appendStr(num1,num2,sum));
     System.out.println(appendStr(num1,num2,sub));
     System.out.println(appendStr(num1,num2,mult));
+    
+  }
+}
