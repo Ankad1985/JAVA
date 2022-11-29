@@ -1,0 +1,16 @@
+//Поиск элемента в списке по строке.
+import java.util.ArrayList;
+import java.util.List;
+class Main {
+  public static void main(String[] args) {
+    List<String> arr1 = new ArrayList<>();
+    arr1.add("abc");
+    arr1.add("bcd");
+    arr1.add("xyz");
+    System.out.println("Исходный список: " + arr1);
+    String str = "xyz";
+    int index_list = arr1.lastIndexOf(str);
+    System.out.println("Строка находится в списке под индексом: " + index_list);
+  
+  }
+}
