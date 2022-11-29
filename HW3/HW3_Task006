@@ -1,0 +1,16 @@
+//Удалить третий элемент из списка.
+import java.util.ArrayList;
+import java.util.List;
+class Main {
+  public static void main(String[] args) {
+    List<String> arr1 = new ArrayList<>();
+    arr1.add("System");
+    arr1.add("out");
+    arr1.add("println");
+    arr1.add("descript");
+    arr1.add("value");
+    System.out.println("Полученный список: " + arr1);
+    arr1.remove(2);
+    System.out.println("Изменненный список: " + arr1);
+  }
+}
