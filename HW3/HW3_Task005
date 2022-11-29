@@ -1,0 +1,17 @@
+//Обновить определенный элемент списка по заданному индексу.
+import java.util.ArrayList;
+import java.util.List;
+class Main {
+  public static void main(String[] args) {
+    List<Integer> arr1 = new ArrayList<>();
+    arr1.add(8);
+    arr1.add(63);
+    arr1.add(52);
+    arr1.add(37);
+    arr1.add(12);
+    System.out.println("Полученный список: " + arr1);
+    arr1.set(1, 777);
+    System.out.println("Обновленный список: " + arr1);
+        
+  }
+}
