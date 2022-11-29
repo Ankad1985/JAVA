@@ -1,0 +1,27 @@
+//Удалить из первого списка все элементы отсутствующие во втором списке.
+import java.util.ArrayList;
+import java.util.List;
+class Main {
+  public static void main(String[] args) {
+    List<Integer> arr1 = new ArrayList<>();
+    arr1.add(1);
+    arr1.add(2);
+    arr1.add(2);
+    arr1.add(4);
+    arr1.add(5);
+    System.out.println();
+    System.out.println("Исходные списки:");
+    System.out.println("Первый список :" + arr1);
+    List<Integer> arr2 = new ArrayList<>();
+    arr2.add(6);
+    arr2.add(7);
+    System.out.println("Второй список :" + arr2);
+    
+    arr1.retainAll(arr2);
+    System.out.println();
+    System.out.println("Полученные списки:");
+    System.out.println("Первый список :" + arr1);
+    System.out.println("Второй список :" + arr2);
+      
+  }
+}
