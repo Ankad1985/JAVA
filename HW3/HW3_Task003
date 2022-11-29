@@ -1,0 +1,17 @@
+//Вставить элемент в список в первой позиции.
+import java.util.ArrayList;
+import java.util.List;
+class Main {
+  public static void main(String[] args) {
+   
+    List<Integer>arr = new ArrayList<>();
+    arr.add(9);
+    arr.add(12);
+    arr.add(5);
+    arr.add(89);
+    System.out.println("Исходный список: " + arr);
+    arr.add(0, 777);
+    System.out.println("Полученый список: " + arr);
+    
+  }
+}
