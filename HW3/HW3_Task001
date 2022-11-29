@@ -1,0 +1,14 @@
+//Создать новый список, добавить несколько строк и вывести коллекцию на экран.
+import java.util.ArrayList;
+import java.util.List;
+class Main {
+  public static void main(String[] args) {
+    List<String> arr1  = new ArrayList<>();
+    arr1.add("Я");
+    arr1.add("изучаю");
+    arr1.add("Java");
+    
+    System.out.println(arr1);
+    
+  }
+}
