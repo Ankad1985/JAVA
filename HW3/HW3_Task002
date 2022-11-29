@@ -1,0 +1,14 @@
+//Итерация всех элементов списка цветов и добавления к каждому символа '!'.
+import java.util.ArrayList;
+import java.util.List;
+class Main {
+  public static void main(String[] args) {
+    List<String> colour = new ArrayList<>();
+    colour.add("Red");
+    colour.add("Green");
+    colour.add("Blue");
+    for(String i: colour){
+      System.out.println(i + "!");
+    }
+  }
+}
