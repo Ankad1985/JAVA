@@ -29,6 +29,7 @@ public class HW4_Task001 {
             String fio = input_fio.nextLine();
             System.out.println("Enter your age: ");
             Integer age = input_age.nextInt();
+            
 
             list_age.add(age);
             String[] fio1 = fio.split(" ");
@@ -48,6 +49,7 @@ public class HW4_Task001 {
             
             System.out.println("Enter your gender M/F: ");
             String gender = input_sex.nextLine();
+         
             if(gender.toUpperCase().equals("M")) {
                 list_sex.add("man");
             }
@@ -57,13 +59,20 @@ public class HW4_Task001 {
             }
             key.add(list_age.size() - 1); 
             System.out.println("Do you want to enter new data? Y/N");
-            Scanner scanNewData = new Scanner(System.in);
-            String yn = scanNewData.nextLine();
+            Scanner input_NewData = new Scanner(System.in);
+            String yn = input_NewData.nextLine();
            
             if(yn.toUpperCase().equals("N")) {
                 flag = false;
+                input_age.close();
+                input_fio.close();
+                input_sex.close();
+                input_NewData.close();
+
             }
+            
         }
+        
 
         int cnt = list_age.size()-1;
         while (cnt > -1) {
